@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+}
+.container{
+    padding: 1.5rem 2rem 2rem 2rem;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+
+}
+.image1{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0rem;
+    max-width: 125px;
+    padding-bottom: 2rem;
+}
+.image2{
+    max-width:310px;
+    height: auto;
+    margin-top: 1.2rem;
+}
+.text{
+    margin-top: 2rem;
+    text-align: center;
+}
+.text p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 1.3rem;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+}
+.register{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    padding: 0.9rem 4rem;
+    border-radius: 2rem;
+    font-size: 1rem;   
+}
+.register:hover{
+    color: white;
+    padding: 0.9rem 4rem;
+    background-color: hsl(300, 69%, 71%);
+    /* font-size: 1rem; */
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+.fb{
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin: 0.4rem;
+    width: 30px;
+    height: 30px;
+}
+.fb:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: violet;
+    cursor: pointer;
+}
+.twit{
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin: 0.4rem;
+    width: 30px;
+    height: 30px;
+
+}
+.twit:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: violet;
+    cursor: pointer;
+}
+.insta{
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin: 0.4rem;
+    width: 30px;
+    height: 30px;
+}
+.insta:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: violet;
+    cursor: pointer;
+}
+@media (min-width: 600px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        flex-direction: row;
+    }
+    .container{
+        flex-direction: row;
+        padding: 1.5rem 0rem 2rem 4rem;
+    }
+    .subcontainer1{
+        min-width:55%;
+
+       }
+       .image1{
+        max-width: 200px;
+        margin-top: 1.5rem;
+    }
+    .image2{
+        min-width:90%;
+        margin-top: 2rem;
+    }
+    .subcontainer2{
+        min-width:45%;
+        padding-top: 6rem;
+        text-align:right;
+    }
+    .text{
+        text-align: left;
+        padding-right: 5rem;
+        margin-top: 5rem;
+    }
+    h1{
+        font-size: 2.2rem;
+        margin-right: 6rem;
+
+    }
+    .text p{
+        font-size: 1rem;
+        margin: 0.6rem 2rem 3rem 0;
+        padding: 0 2.5rem 0 0 ;
+      
+    }
+    .icons{
+        margin: 4rem 0 2rem 10rem;
+        padding-right: 0;
+        position: absolute;
+        right: 6rem;
+        bottom: 1rem;;
+    }
+    .fb{
+        width: 40px;
+        height: 40px;
+        padding: 0.4rem;
+    }
+    .twit{
+        width: 40px;
+        height: 40px;
+        padding: 0.4rem;
+    }
+    .insta{
+        width: 40px;
+        height: 40px;
+        padding: 0.4rem;
+    }
+
+}
